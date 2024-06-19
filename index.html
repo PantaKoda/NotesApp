@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+
+  <div class="app-container">
+    <main>
+
+      <div class="date-holder">
+
+      </div>
+
+      <div class="main-text-area" id="notes-list">
+        <div class="note-item">
+          <div>
+            <input type="checkbox" id="notes1" name="notes1">
+            <label for="notes1"> Apples</label>
+          </div>
+          <button type="button" class="eraseNotesBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+
+      </div>
+
+
+      <form id="notesForm">
+        <div class="textInput-box">
+
+
+          <input type="text" placeholder="Note name" id="noteItemInput">
+
+          <button type="submit" id="noteSubmitBtn">
+            <div>+</div>
+          </button>
+
+        </div>
+
+      </form>
+
+
+    </main>
+  </div>
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
