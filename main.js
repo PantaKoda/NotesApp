@@ -52,6 +52,7 @@ function createNewNote(note) {
   checkBox.setAttribute("type", "checkbox");
   checkBox.setAttribute("name", `note${notesCount}`);
   checkBox.id = `notes${notesCount}`;
+  checkBox.className='notesCheckbox'
   div.appendChild(checkBox);
 
   const label = document.createElement("label");
@@ -98,4 +99,24 @@ function removeNote(e) {
   }
 }
 
-notesList.addEventListener("click", removeNote);
+//CHECKBOX LINE THROUGH
+function strikeThrough(element) {
+  element.target.nextElementSibling.classList.toggle('line-through')
+}
+
+function eraseTextNote(e){
+  if (e.target.classList.contains("notesCheckbox")) {
+    strikeThrough(e);
+  }
+}
+
+
+notesList.addEventListener("click", (e) =>{
+  removeNote(e)
+  eraseTextNote(e)
+});
+
+
+
+
+

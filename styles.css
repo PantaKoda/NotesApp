@@ -156,3 +156,7 @@ input[type="checkbox"] {
 .eraseNotesBtn :hover {
   cursor: pointer;
 }
+.line-through {
+  text-decoration:line-through;
+  color: gray;
+}
